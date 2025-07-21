@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Ganesh Mandal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background: #fff8f0;
+    }
+    /* Navbar */
+    nav.navbar {
+      background: linear-gradient(45deg, #ff512f, #dd2476);
+    }
+    nav.navbar a.nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      margin-right: 15px;
+    }
+    nav.navbar a.navbar-brand {
+      color: #fff !important;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 70vh;
+      background: url("Image.jpg/Ganapati7.jpg") no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%; width: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 0 0 15px rgba(0,0,0,0.6);
+      margin-bottom: 20px;
+      z-index: 2;
+    }
+    .hero p {
+      position: relative;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      z-index: 2;
+    }
+
+    /* Stylish Button */
+    .my-btn {
+      position: relative;
+      z-index: 2;
+      background: linear-gradient(45deg, #ff512f, #dd2476);
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .my-btn:hover {
+      background: linear-gradient(45deg, #dd2476, #ff512f);
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+
+    /* Gallery */
+    #gallery img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    #gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    /* Footer */
+    footer {
+      background: #dd2476;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">🙏 जय श्री राम  🙏</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>🙏 जय हनुमान मंडळ बोरखळ  🙏</h1>
+  <p>स्थापना 1984 | बोरखळचा नवसाचा  गणपती  </p>
+  <a href="#about" class="my-btn">🌸 More About Us</a>
+</section>
+
+<!-- About -->
+<section id="about" class="p-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">About Us</h2>
+    <p class="lead">आमच्या मंडळाची स्थापना 1984 मध्ये झाली. आम्ही दरवर्षी भव्य गणेशोत्सव साजरा करतो, आणि अनेक सामाजिक उपक्रम राबवतो. आमचा उद्देश समाजातील प्रत्येकाला एकत्र आणणे आणि उत्सवाचा आनंद साजरा करणे आहे.</p>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="p-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Gallery</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3"><img src="Image.jpg/Ganapati.jpg" class="img-fluid rounded"></div>
+      <div class="col-md-4 mb-3"><img src="Image.jpg/Ganapati2.jpg" class="img-fluid rounded"></div>
+      <div class="col-md-4 mb-3"><img src="Image.jpg/Ganapati3.jpg" class="img-fluid rounded"></div>
+      <div class="col-md-4 mb-3"><img src="Image.jpg/Ganapati4.jpg" class="img-fluid rounded"></div>
+      <div class="col-md-4 mb-3"><img src="Image.jpg/Ganapati5.jpg" class="img-fluid rounded"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Events -->
+<section id="events" class="p-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Events</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card shadow h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">🎶 संगीत स्पर्धा</h5>
+            <p class="card-text">वार्षिक संगीत स्पर्धा आणि कार्यक्रम</p>
+             <a href="event1.html" class="btn btn btn-primary mt-3">Click</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card shadow h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">🩸 रक्तदान शिबीर</h5>
+            <p class="card-text">सामाजिक उपक्रमाचा भाग म्हणून रक्तदान शिबीर</p>
+             <a href="event2.html" class="btn btn btn-primary mt-3">Click</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card shadow h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">🍛 महाप्रसाद</h5>
+            <p class="card-text">गणेश चतुर्थीच्या दिवशी महाप्रसादाचे आयोजन</p>
+             <a href="event3.html" class="btn btn btn-primary mt-3">Click</a>
+              
+          </div>
+        </div>
+      </div>
+    <div class="col-md-4 mb-3">
+          <div class="card shadow h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">🚩 शिवजयंती</h5>
+              <p class="card-text">१९ फेब्रुवारी - शिवजयंती निमित्त विविध कार्यक्रम</p>
+              <!-- बटण ज्यावर क्लिक केल्यावर Modal उघडेल -->
+             <a href="event4.html" class="btn btn btn-primary mt-3">Click</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="p-5 text-center bg-light">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="lead">📞 <a href="tel:9876543210">9999999999</a></p>
+    <p class="lead">🔗 <a href="https://www.instagram.com/borkhal_cha_maharaja_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram </a></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2025 जय हनुमान मंडळ बोरखळ  | Built with ❤️ by Our Team
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
