@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> बोरखळचा महाराजा </title>
+  <style>
+    .sthapna {
+  position: absolute;
+  top: 20px;          /* वरून 20px */
+  right: 20px;        /* उजवीकडून 20px */
+  font-size: 1.2rem;  /* अक्षराचा size */
+  font-weight: 600;   /* जाड अक्षर */
+  color: #f4fc1e;     /* रंग (सोनेरीसारखा) */
+  text-shadow: 0 0 10px rgba(0,0,0,0.6); /* थोडा glow */
+  z-index: 3;         /* landing overlay च्या वर दिसण्यासाठी */
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* Landing section */
+    .landing {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("Image.jpg/Ganapati6.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+    
+    /* Dark + color overlay */
+    .landing::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%; width: 100%;
+      background: linear-gradient(45deg, rgba(255,0,0,0.5), rgba(255,165,0,0.4));
+      backdrop-filter: blur(2px);
+      z-index: 1;
+    }
+    h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 3.5rem;
+      text-align: center;
+      font-weight: bold;
+      font-weight: 900;
+      color: #ffffff;
+      text-shadow: 0 0 15px rgba(0,0,0,0.7);
+      animation: fadeInDown 2s ease forwards;
+    }
+    @keyframes fadeInDown {
+      50% { opacity: 200; transform: translateY(-50px); }
+      100% { opacity: 200; transform: translateY(0); }
+    }
+    .enter-btn {
+      position: relative;
+      z-index: 2;
+      margin-top: 40px;
+      background: linear-gradient(45deg, #ff1744, #ff00bb);
+      padding: 15px 40px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border-radius: 50px;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(255,255,255,0.5);
+      transition: all 0.3s ease;
+      animation: fadeInUp 2.5s ease forwards;
+    }
+    .enter-btn:hover {
+      background: linear-gradient(45deg, #ff00a6, #5117ff);
+      box-shadow: 0 0 25px rgba(255,255,255,0.8);
+      transform: scale(1.05);
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @media(max-width:768px){
+      h1 { font-size: 2rem; }
+      .enter-btn { font-size: 1rem; padding: 12px 25px; }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="landing">
+    <div class="sthapna"> स्थापना :- ❶❾❽❹</div>
+    <h1>🙏 जय हनुमान मंडळ बोरखळ 🙏</h1>
+    <a href="main.html" class="enter-btn">🚀 आपले स्वागत आहे .</a>
+  </div>
+</body>
+</html>
